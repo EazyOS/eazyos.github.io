@@ -28,9 +28,9 @@
          gtag('config', 'G-89JPD52GRC');
       </script>
       </script>
+   <style>
       <!-- CSS -->
-      <style>
-         /* CSS Variables */
+      /* CSS Variables */
          ..corner-link-container {
          position: fixed; /* or absolute, depending on your needs */
          top: 0;
@@ -38,10 +38,27 @@
          padding: 10px; /* Optional: adds some space from the corner */
          z-index: 1000; /* Optional: ensures the link is above other content */
          }
-         
+         .corner-link-container img {
          width: 100px; /* Adjust the image size as needed */
          height: auto;
          border: none; /* Optional: removes default link border in some browsers */
+         }
+         .button {
+         background-color: #4CAF50; /* Green background */
+         border: none; /* Remove default border */
+         color: white; /* White text */
+         padding: 15px 32px; /* Add padding */
+         text-align: center; /* Center the text */
+         text-decoration: none; /* Remove underline */
+         display: inline-block; /* Make it inline-block for sizing */
+         font-size: 16px; /* Increase font size */
+         margin: 4px 2px; /* Add some margin */
+         cursor: pointer; /* Change cursor to pointer on hover */
+         border-radius: 8px; /* Rounded corners */
+         }
+         /* Optional: Add hover effect */
+         .button:hover {
+         background-color: #45a049;
          }
          :root {
          --bg-color: #ffffff;
@@ -70,7 +87,11 @@
          max-width: 900px;
          padding: 0 16px;
          }
-         .info-box {
+         figure {
+         margin: 20px 0;
+         text-align: center;
+         }
+      .info-box {
          background-color: #FFFFE0; /* Light Yellow background */
          border: 3px solid #E9D502; /* Yellow border */
          padding: 15px; /* Space inside the box */
@@ -84,10 +105,9 @@
           .info-box p {
           color: #333; /* Dark text color */
           }
-         .corner-link-container img {
-         figure {
-         margin: 20px 0;
-         text-align: center;
+         img {
+         max-width: 100%;
+         height: auto;
          }
          figcaption {
          color: var(--caption-color);
@@ -108,6 +128,7 @@
          hr {
          opacity: 0.2;
          }
+      
       </style>
    </head>
    <!-- Homepage Buttion -->    
