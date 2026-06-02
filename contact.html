@@ -26,16 +26,28 @@
       <style>
          /* CSS Variables */
           .info-box {
-background-color: #f0f0f0;
-border: 1px solid #ccc;
-padding: 20px;
-border-radius: 5px;
-max-width: 400px;
-margin: 10px auto;
-}
-.info-box h2 {
-margin-top: 0;
-}
+            border: 2px solid #0056b3;
+            border-radius: 6px;
+            max-width: 400px;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .info-title {
+            background-color: #0056b3;
+            color: white;
+            margin: 0;
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+        .info-content {
+            padding: 15px;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.5;
+        }
+
+
          ..corner-link-container {
          position: fixed; /* or absolute, depending on your needs */
          top: 0;
@@ -107,13 +119,16 @@ margin-top: 0;
       </a>
    </div>
 
-    <!--Make sure Messsage is unhidden before editing and is hidden after!-->
+   
 
 <body>
+    <!--Make sure Messsage is unhidden before editing and is hidden after!-->
 <div class="info-box">
-<h2>Important Notice</h2>
-<p>This is an important message you need to read.</p>
-</div>
+        <h3 class="info-title">Important Notice</h3>
+        <div class="info-content">
+            This is an information box layout. You can place your update alerts, 
+            announcements, or side notes inside this content container.
+        </div>
          
    <body>
       <div class="container">
