@@ -1,225 +1,320 @@
+Absolutely. Here's a cleaned-up `guide.html` that keeps the existing EazyOS look and feel, improves spacing/readability, fixes the broken CSS, and uses a more readable link color.
+
 <!DOCTYPE html>
+
 <html lang="en">
-   <head>
-      <!-- Metadata -->
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta property="og:site_name" content="EazyOS">
-      <title>The Official EazyOS Guide</title>
-      <meta name="description" content="A, well updated, official guide to EazyOS">
-      <!-- Light / Dark mode support -->
-      <meta name="color-scheme" content="light dark">
-      <!-- Favicon -->
-      <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
-      <link rel="icon" type="image/png" sizes="48x48" href="assets/images/favicon.png">
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-89JPD52GRC"></script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-         
-         gtag('config', 'G-89JPD52GRC');
-      </script>
-      <style>
-         <!-- CSS -->
-         /* CSS Variables */
-         ..corner-link-container {
-         position: fixed; /* or absolute, depending on your needs */
-         top: 0;
-         right: 0; /* Use 'left: 0;' for the top-left corner */
-         padding: 10px; /* Optional: adds some space from the corner */
-         z-index: 1000; /* Optional: ensures the link is above other content */
-         }
-         .corner-link-container img {
-         width: 100px; /* Adjust the image size as needed */
-         height: auto;
-         border: none; /* Optional: removes default link border in some browsers */
-         }
-         .button {
-         background-color: #4CAF50; /* Green background */
-         border: none; /* Remove default border */
-         color: white; /* White text */
-         padding: 15px 32px; /* Add padding */
-         text-align: center; /* Center the text */
-         text-decoration: none; /* Remove underline */
-         display: inline-block; /* Make it inline-block for sizing */
-         font-size: 16px; /* Increase font size */
-         margin: 4px 2px; /* Add some margin */
-         cursor: pointer; /* Change cursor to pointer on hover */
-         border-radius: 8px; /* Rounded corners */
-         }
-         /* Optional: Add hover effect */
-         .button:hover {
-         background-color: #45a049;
-         }
-         :root {
-         --bg-color: #ffffff;
-         --text-color: #000000;
-         --caption-color: #555555;
-         --caption-small: #777777;
-         }
-         /* Dark Mode Overrides */
-         @media (prefers-color-scheme: dark) {
-         :root {
-         --bg-color: #121212;
-         --text-color: #eaeaea;
-         --caption-color: #bbbbbb;
-         --caption-small: #999999;
-         }
-         }
-         body {
-         margin: 0;
-         font-family: Helvetica, Arial, sans-serif;
-         background-color: var(--bg-color);
-         color: var(--text-color);
-         }
-         .container {
-         margin: 40px auto;
-         width: 100%;
-         max-width: 900px;
-         padding: 0 16px;
-         }
-         figure {
-         margin: 20px 0;
-         text-align: center;
-         }
-         .info-box {
-         background-color: #0084ff49; /* Light Blue background */
-         border: 3px solid #0084ff; /* Blue border */
-         padding: 15px; /* Space inside the box */
-         border-radius: 5px; /* Rounded corners */
-         margin: 10px 0; /* Space outside the box */
-         }
-         .info-box h2 {
-         margin: 0; /* Remove default margin */
-         color: #0084ff; /* Blue text color */
-         }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:site_name" content="EazyOS">
+    <meta name="color-scheme" content="light dark">
 
-         .warning-box {
-         background-color: #ffff003f; /* Light Yellow background */
-         border: 3px solid #FFD300; /* Yellow border */
-         padding: 15px; /* Space inside the box */
-         border-radius: 5px; /* Rounded corners */
-         margin: 10px 0; /* Space outside the box */
-         }
-         .warning-box h2 {
-         margin: 0; /* Remove default margin */
-         color: #FFD300; /* Yellow text color */
-         }
-         
-         img {
-         max-width: 100%;
-         height: auto;
-         }
-         figcaption {
-         color: var(--caption-color);
-         font-size: 0.9rem;
-         margin-top: 8px;
-         }
-         figcaption small {
-         color: var(--caption-small);
-         font-style: italic;
-         }
-         :root {
-         color-scheme: light dark; /* Informs the browser the page supports both schemes */
-         }
-         a { color: rgb(0, 140, 255); }
-         a:hover {
-         color: lightblue; 
-         } 
-         hr {
-         opacity: 0.2;
-         }
-      </style>
-   </head>
-   <!-- Homepage Buttion -->    
-   <div style="padding: 10px;" class="corner-link-container">
-      <a href="https://eazyos.github.io"  aria-label="Homepage">
-      <img src="assets/images/corner.png" alt="Homepage">
-      </a>
-   </div>
-   <body>
-      <div class="container">
-       <!--Make sure Messsage is unhidden before editing and is hidden after!-->
+```
+<title>The Official EazyOS Guide</title>
+<meta name="description" content="A well-updated official guide to EazyOS">
 
-       
-       <div class="info-box">
-            <h2>Updates are Underway!</h2>
-            <p>We are currently working on some updates for this page to help improve our website. Sorry of any inconvenience.</p>
-       </div>
-       
-         <!-- Title -->
-         <hr>
-         <h1>EazyOS For Dummies</h1>
-         <h3>The Official EazyOS Guide</h3>
-         <hr>
+<link rel="icon" type="image/png" href="assets/images/favicon.png">
 
-         <!-- Main Content -->
-         <h4 style="margin-bottom: 30px;">Download & Start The Setup</h4>
-         
-         <p>To install EazyOS, you need to download the setup which can be accessed on <a href="https://eazyos.github.io" target="_blank" rel="noopener noreferrer">the offical EazyOS website</a> or download it directly <a href="https://github.com/AllensTechChannel/EazyOS/releases/download/3.1.2/setup3.1.2.bat" target="_blank" rel="noopener noreferrer">from this link</a>.</p>
-         
-         <div class="warning-box">
-            <h2>Attention FireFox Users!</h2>
-            <p>Some FireFox users might experience some difficulty downloading the setup directly from our website.</p>
-         </div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-89JPD52GRC"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-89JPD52GRC');
+</script>
 
-         <p style="margin-bottom: 30px;">To run setup, go to your file explorer and navigate to your downloads folders, then, double click "setup3.1.1.bat".</p>
-         
-         <hr>
+<style>
+    :root {
+        --bg-color: #ffffff;
+        --text-color: #000000;
+        --caption-color: #555555;
+        --caption-small: #777777;
 
-         <h4 style="margin-bottom: 30px;">Going Through The Installer</h4>
+        --link-color: #3ea6ff;
+        --link-hover: #74c0ff;
+    }
 
-         <p>Once you are in the installer you should see a similar application to the image below.</p>
-         <img src="assets/images/Screenshot2.png" width="800" alt="Description">
-         <p>To continue setting up EazyOS, press the enter key to install EazyOS to the default path (recommended), or enter your own path to install to (advanced). </p>
-         <p>Next, select "Fresh Install (removes everything and reinstalls)"; by pressing the 1 key on your keyboard, to remove any potential EazyOS installations.
-         <p>or, you can select "Upgrade EazyOS (keeps your user data)"; by pressing 2 on your keyboard, to upgrade EazyOS and keep your files</p>
-         <p>If you are freshly installing EazyOS, setup will ask for a username and password, enter your desired username and password for EazyOS.
-         <p>
-         <p>Next, Wait for EazyOS to download (this might take a while depending on your internet speed & connection).</p>
-         <p>After the first half of setup is finished the second half of setup will install other needed programs.</p>
-         <hr>
-         <br>
-         <h4>Logging into EazyOS</h4>
-         <p>Once the installer is finished you should see the image below.</p>
-         <img src="assets/images/Screenshot3.png" width="800" alt="Description">
-         <p>Then, once eazyos prompts you to login, enter you username and password you set during setup.</p>
-         <img src="assets/images/Screenshot4.png" alt="Description of the image">
-         <hr>
-         <h4>Customizing EazyOS</h4>
-         <p>To customize EazyOS open the control panel on the desktop after you log in.</p>
-         <img src="assets/images/Screenshot5.png" alt="Description of the image">
-         <p>To change the background color click on "Display", then under "Desktop Background" click the "Choose" buttion and select a color.
-         <p>
-         <p>To change the background image click on "Display", then under the "Wallpaper" section select a default background or click on the "Browse..." buttion and then, click on the "Set Wallpaper" buttion.
-         <p>To change the titlebar color click on "Display", then under the "Window Title Bar" section and click on the "Choose..." buttion and select a color. It is a similar process to change the taskbar color.
-         <p>
-         <hr>
-         <br>
-         <h4>Changing The Username and Password</h4>
-         <p>Open the start menu and select "Add Username and Password"</p>
-         <p>Then enter a new username and password</p>
-         <hr>
-         <h4>Always Remember To...</h4>
-         <ul>
-            <li>Update EazyOS Frequently.</li>
-            <li>Not Ignore The EazyOS Out OF Support Message</li>
-            <li>Make Sure to Please Report Any Bugs.</li>
-         </ul>
-         <hr>
-         <!-- Copyright -->
-         <figcaption>
-            Copyright &copy;
-            <span id="year"></span>
-            AllensTechChannel. All rights reserved. <a href="contact.html" target="_blank" rel="noopener noreferrer">Contact Me!</a>
-         </figcaption>
-         <!-- JS for copyright year -->
-         <script>
-            document.getElementById("year").textContent = new Date().getFullYear();
-         </script>        
-      </div>
-   </body>
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --bg-color: #121212;
+            --text-color: #eaeaea;
+            --caption-color: #bbbbbb;
+            --caption-small: #999999;
+        }
+    }
+
+    body {
+        margin: 0;
+        font-family: Helvetica, Arial, sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+    }
+
+    .container {
+        margin: 50px auto;
+        width: 100%;
+        max-width: 900px;
+        padding: 0 20px;
+        line-height: 1.7;
+    }
+
+    .corner-link-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 10px;
+        z-index: 1000;
+    }
+
+    .corner-link-container img {
+        width: 100px;
+        height: auto;
+    }
+
+    .info-box {
+        background-color: #0084ff49;
+        border: 3px solid #0084ff;
+        padding: 18px;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+
+    .info-box h2 {
+        margin-top: 0;
+        color: #0084ff;
+    }
+
+    .warning-box {
+        background-color: #ffff003f;
+        border: 3px solid #FFD300;
+        padding: 18px;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+
+    .warning-box h2 {
+        margin-top: 0;
+        color: #FFD300;
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    h3 {
+        color: var(--caption-color);
+        margin-top: 5px;
+    }
+
+    h4 {
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+
+    a {
+        color: var(--link-color);
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    a:hover {
+        color: var(--link-hover);
+        text-decoration: underline;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .guide-image {
+        border-radius: 8px;
+        margin: 20px 0;
+        box-shadow: 0 4px 12px rgba(0,0,0,.15);
+    }
+
+    hr {
+        opacity: 0.2;
+    }
+
+    footer {
+        color: var(--caption-color);
+        font-size: 0.9rem;
+        margin-top: 40px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<div class="corner-link-container">
+    <a href="https://eazyos.github.io/" aria-label="Homepage">
+        <img src="assets/images/corner.png" alt="Homepage">
+    </a>
+</div>
+
+<div class="container">
+
+```
+<div class="info-box">
+    <h2>Updates are Underway!</h2>
+    <p>We are currently working on updates to improve this guide. Sorry for any inconvenience.</p>
+</div>
+
+<hr>
+
+<h1>EazyOS For Dummies</h1>
+<h3>The Official EazyOS Guide</h3>
+<p>A beginner-friendly guide for installing, using, and customizing EazyOS.</p>
+
+<hr>
+
+<div class="info-box">
+    <h2>Contents</h2>
+    <ul>
+        <li><a href="#download">Download & Setup</a></li>
+        <li><a href="#installer">Going Through the Installer</a></li>
+        <li><a href="#login">Logging In</a></li>
+        <li><a href="#customize">Customizing EazyOS</a></li>
+        <li><a href="#account">Changing Username & Password</a></li>
+    </ul>
+</div>
+
+<h4 id="download">Download & Start The Setup</h4>
+
+<p>
+    To install EazyOS, download the setup from
+    <a href="https://eazyos.github.io" target="_blank">the official EazyOS website</a>
+    or download it directly
+    <a href="https://github.com/AllensTechChannel/EazyOS/releases/download/3.1.2/setup3.1.2.bat" target="_blank">here</a>.
+</p>
+
+<div class="warning-box">
+    <h2>Attention Firefox Users!</h2>
+    <p>Some Firefox users may experience difficulty downloading the setup directly from our website.</p>
+</div>
+
+<p>
+    To run setup, open File Explorer, navigate to your Downloads folder,
+    and double-click <strong>setup3.1.2.bat</strong>.
+</p>
+
+<hr>
+
+<h4 id="installer">Going Through The Installer</h4>
+
+<p>Once you launch the installer, you should see something similar to the image below.</p>
+
+<img class="guide-image" src="assets/images/Screenshot2.png" alt="EazyOS Installer">
+
+<p>
+    Press Enter to install EazyOS to the default location (recommended),
+    or enter a custom installation path.
+</p>
+
+<p>
+    Choose <strong>Fresh Install</strong> by pressing 1 to remove any previous installation and install a clean copy.
+</p>
+
+<p>
+    Choose <strong>Upgrade EazyOS</strong> by pressing 2 to keep your existing files and settings.
+</p>
+
+<p>
+    If performing a fresh install, you'll be asked to create a username and password.
+</p>
+
+<p>
+    Wait for EazyOS to download and install. The installation time depends on your internet connection.
+</p>
+
+<p>
+    After the first phase completes, setup will install additional required components.
+</p>
+
+<hr>
+
+<h4 id="login">Logging Into EazyOS</h4>
+
+<p>Once installation is complete, you should see the screen below.</p>
+
+<img class="guide-image" src="assets/images/Screenshot3.png" alt="Setup Complete">
+
+<p>
+    When prompted, enter the username and password you created during setup.
+</p>
+
+<img class="guide-image" src="assets/images/Screenshot4.png" alt="Login Screen">
+
+<hr>
+
+<h4 id="customize">Customizing EazyOS</h4>
+
+<p>
+    Open the Control Panel from the desktop after logging in.
+</p>
+
+<img class="guide-image" src="assets/images/Screenshot5.png" alt="Control Panel">
+
+<p>
+    To change the desktop background color, open Display settings and choose a color under Desktop Background.
+</p>
+
+<p>
+    To change the wallpaper, browse for an image and click Set Wallpaper.
+</p>
+
+<p>
+    To change the title bar or taskbar colors, open Display settings and select a new color using the Choose button.
+</p>
+
+<hr>
+
+<h4 id="account">Changing The Username and Password</h4>
+
+<p>
+    Open the Start Menu and select
+    <strong>Add Username and Password</strong>.
+</p>
+
+<p>
+    Enter your new username and password when prompted.
+</p>
+
+<hr>
+
+<h4>Always Remember To...</h4>
+
+<ul>
+    <li>Keep EazyOS updated.</li>
+    <li>Pay attention to out-of-support notices.</li>
+    <li>Report bugs whenever possible.</li>
+</ul>
+
+<hr>
+
+<footer>
+    Copyright &copy;
+    <span id="year"></span>
+    AllensTechChannel. All rights reserved.
+    <a href="contact.html">Contact Me!</a>
+</footer>
+```
+
+</div>
+
+<script>
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+</script>
+
+</body>
 </html>
+
+This version stays very close to your current design, but feels much more polished and consistent with the homepage.
