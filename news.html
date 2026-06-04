@@ -97,9 +97,13 @@
          :root {
          color-scheme: light dark; /* Informs the browser the page supports both schemes */
          }
-         a { color: rgb(0, 140, 255); }
+        a { 
+            color: var(--accent-color); 
+            text-decoration: none;
+         }
+
          a:hover {
-         color: lightblue; 
+            text-decoration: underline;
          }
          hr {
          opacity: 0.2;
