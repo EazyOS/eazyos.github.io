@@ -145,7 +145,18 @@
          
          
          
-         <p>Current Page URL: <span id="url-display"></span></p>
+         <p>Current Page URL: <span id="currentUrl"></span></p>
+
+  <script>
+    // Get the full URL
+    const fullUrl = document.URL;
+
+    // Remove https:// and keep www.
+    const cleanUrl = fullUrl.replace(/^https?:\/\//, '').replace(/^www\./, '');
+
+    // Display in the page
+    document.getElementById('currentUrl').textContent = `https://www.${cleanUrl}`;
+  </script>
       
          <hr>
          <h3>Links</h3>
