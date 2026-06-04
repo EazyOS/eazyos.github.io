@@ -51,11 +51,15 @@
          border: none; /* Optional: removes default link border in some browsers */
          }
          :root {
-         --bg-color: #ffffff;
-         --text-color: #000000;
-         --caption-color: #555555;
-         --caption-small: #777777;
-         }
+        --bg-color: #ffffff;
+        --text-color: #000000;
+        --caption-color: #555555;
+        --caption-small: #777777;
+
+        --link-color: #3ea6ff;
+        --link-hover: #74c0ff;
+    }
+
          /* Dark Mode Overrides */
          @media (prefers-color-scheme: dark) {
          :root {
@@ -162,7 +166,7 @@
          <figcaption>
             Copyright &copy;
             <span id="year"></span>
-            AllensTechChannel. All rights reserved. <a href="contact.html" target="_blank" rel="noopener noreferrer">Contact Me!</a>
+            AllensTechChannel. All rights reserved. <a href="/contact" target="_blank" rel="noopener noreferrer">Contact Me!</a>
          </figcaption>
          <!-- JS Script for copyright year -->        
          <script>

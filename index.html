@@ -68,11 +68,16 @@
          background-color: #45a049;
          }
          :root {
-         --bg-color: #ffffff;
-         --text-color: #000000;
-         --caption-color: #555555;
-         --caption-small: #777777;
-         }
+        --bg-color: #ffffff;
+        --text-color: #000000;
+        --caption-color: #555555;
+        --caption-small: #777777;
+
+        --link-color: #3ea6ff;
+        --link-hover: #74c0ff;
+    }
+
+
          /* Dark Mode Overrides */
          @media (prefers-color-scheme: dark) {
          :root {
@@ -114,14 +119,16 @@
          :root {
          color-scheme: light dark; /* Informs the browser the page supports both schemes */
          }
-        a { 
-            color: var(--accent-color); 
-            text-decoration: none;
-         }
+       a {
+        color: var(--link-color);
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
 
-         a:hover {
-            text-decoration: underline;
-         }
+    a:hover {
+        color: var(--link-hover);
+        text-decoration: underline;
+    }
          hr {
          opacity: 0.2;
          }
@@ -168,18 +175,18 @@
          <!-- Links -->
          <h3>Other Links</h3>
          <ul>
-            <li><a href="contact.html">Contact Me!</a></li>
-            <li><a href="guide.html">EazyOS For Dummies </a></li>
-            <li><a href="update.html">EazyOS Update Catalog</a></li>
-            <li><a href="contribution.html">Apply to Be a EazyOS Contributor</a></li>
-            <li><a href="news.html">EazyOS Top News</a></li>
+            <li><a href="/contact">Contact Me!</a></li>
+            <li><a href="/guide">EazyOS For Dummies </a></li>
+            <li><a href="/update">EazyOS Update Catalog</a></li>
+            <li><a href="/contribution">Apply to Be a EazyOS Contributor</a></li>
+            <li><a href="/news">EazyOS Top News</a></li>
          </ul>
          <hr>
          <!-- Copyright -->
          <figcaption>
             Copyright &copy;
             <span id="year"></span>
-            AllensTechChannel. All rights reserved. <a href="contact.html" target="_blank" rel="noopener noreferrer">Contact Me!</a>
+            AllensTechChannel. All rights reserved. <a href="/contact" target="_blank" rel="noopener noreferrer">Contact Me!</a>
          </figcaption>
          <!-- JS Script for Year -->
          <script>
