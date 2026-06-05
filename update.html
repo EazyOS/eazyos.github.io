@@ -97,14 +97,16 @@
          :root {
          color-scheme: light dark; /* Informs the browser the page supports both schemes */
          }
-        a { 
-            color: var(--accent-color); 
-            text-decoration: none;
-         }
+        a {
+        color: var(--link-color);
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
 
-         a:hover {
-            text-decoration: underline;
-         }
+    a:hover {
+        color: var(--link-hover);
+        text-decoration: underline;
+    }
          hr {
          opacity: 0.2;
          }
