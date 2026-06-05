@@ -56,18 +56,18 @@
         line-height: 1.7;
     }
 
-    .corner-link-container {
-        position: fixed;
-        top: 0;
-        right: 0;
-        padding: 10px;
-        z-index: 1000;
-    }
-
-    .corner-link-container img {
-        width: 100px;
-        height: auto;
-    }
+    ..corner-link-container {
+         position: fixed; /* or absolute, depending on your needs */
+         top: 0;
+         right: 0; /* Use 'left: 0;' for the top-left corner */
+         padding: 10px; /* Optional: adds some space from the corner */
+         z-index: 1000; /* Optional: ensures the link is above other content */
+         }
+         .corner-link-container img {
+         width: 100px; /* Adjust the image size as needed */
+         height: auto;
+         border: none; /* Optional: removes default link border in some browsers */
+         }
 
     .info-box {
         background-color: #0084ff49;
