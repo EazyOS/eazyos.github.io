@@ -137,7 +137,9 @@
          <h1>Contact Me!</h1>
          <hr>
          <!---Main Content--->
+         
          <form action="https://api.web3forms.com/submit" method="POST">
+         <div class="h-captcha" data-captcha="true"></div>
          <input type="hidden" name="access_key" value="1d9a2d36-01a9-4f7e-baa5-05f468926b91">
             <label>
             <label>
@@ -165,9 +167,10 @@
             AllensTechChannel. All rights reserved. <a href="/contact" target="_blank" rel="noopener noreferrer">Contact Me!</a>
          </figcaption>
          <!---Copyright Year--->       
-         <script>
+         <script>   
             document.getElementById("year").textContent = new Date().getFullYear();
          </script>        
       </div>
+   <script src="https://web3forms.com/client/script.js" async defer></script>
    </body>
 </html>
