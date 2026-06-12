@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!---Metadata-->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>404 Not Found</title>
+      <meta name="description" content="There is no information about this page.">
+      <!-- Light / Dark mode support -->
+      <meta name="color-scheme" content="light dark">
+      <!-- Favicon -->
+      <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon.png">
+   </head>
+      <script>
+         window.onload = function() {
+             document.getElementById("url-display").innerHTML = document.URL;
+         };
+            
+      </script>
+      <!-- CSS -->
+      <style>
+         /* CSS Variables */
+         .info-box {
+         background-color: #0084ff49; /* Light Blue background */
+         border: 3px solid #0084ff; /* Blue border */
+         padding: 15px; /* Space inside the box */
+         border-radius: 5px; /* Rounded corners */
+         margin: 10px 0; /* Space outside the box */
+         }
+         .info-box h2 {
+         margin: 0; /* Remove default margin */
+         color: #0084ff; /* Blue text color */
+         }
+
+         
+         ..corner-link-container {
+         position: fixed; /* or absolute, depending on your needs */
+         top: 0;
+         right: 0; /* Use 'left: 0;' for the top-left corner */
+         padding: 10px; /* Optional: adds some space from the corner */
+         z-index: 1000; /* Optional: ensures the link is above other content */
+         }
+         .corner-link-container img {
+         width: 	90px; /* Adjust the image size as needed */
+         height: auto;
+         border: none; /* Optional: removes default link border in some browsers */
+         }
+         :root {
+        --bg-color: #ffffff;
+        --text-color: #000000;
+        --caption-color: #555555;
+        --caption-small: #777777;
+
+        --link-color: #3ea6ff;
+        --link-hover: #74c0ff;
+    }
+         /* Dark Mode Overrides */
+         @media (prefers-color-scheme: dark) {
+         :root {
+         --bg-color: #121212;
+         --text-color: #eaeaea;
+         --caption-color: #bbbbbb;
+         --caption-small: #999999;
+         }
+         }
+         body {
+         margin: 0;
+         font-family: Helvetica, Arial, sans-serif;
+         background-color: var(--bg-color);
+         color: var(--text-color);
+         }
+         .container {
+         margin: 40px auto;
+         width: 100%;
+         max-width: 900px;
+         padding: 0 16px;
+         }
+         figure {
+         margin: 20px 0;
+         text-align: center;
+         }
+         img {
+         max-width: 100%;
+         height: auto;
+         }
+         figcaption {
+         color: var(--caption-color);
+         font-size: 0.9rem;
+         margin-top: 8px;
+         }
+         figcaption small {
+         color: var(--caption-small);
+         font-style: italic;
+         }
+         :root {
+         color-scheme: light dark; /* Informs the browser the page supports both schemes */
+         }
+        a {
+        color: var(--link-color);
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    a:hover {
+        color: var(--link-hover);
+        text-decoration: underline;
+    }
+         hr {
+         opacity: 0.2;
+         }
+      </style>
+   </head>
+   <!---Homepage Buttions-->
+   <div style="padding: 10px;" class="corner-link-container">
+      <a href="/"  aria-label="Homepage">
+      <img src="/assets/images/corner.png" alt="Homepage">
+      </a>
+   </div>
+   <body>
+ 
+         
+   <body>
+      </head>
+    
+      <div class="container">
+         
+      <!--Make sure Messsage is unhidden before editing and is hidden after!-->
+      
+      <!--
+      <div class="info-box">
+            <h2>Updates are Underway!</h2>
+            <p>We are currently working on some updates for this page to help improve our website. Sorry of any inconvenience.</p>
+      </div>
+      -->
+
+         <!-- Title -->
+         <h1>Thanks!</h1>
+         <hr>
+         <h3>Your Message Has Been Submitted. You Should Get a Email (Make Sure You Check Your Spam Tab).</h3>
+         
+         <!--Copyright-->
+         <figcaption>
+            Copyright &copy;
+            <span id="year"></span>
+            AllensTechChannel. All rights reserved.<a href="/contact" target="_blank" rel="noopener noreferrer">Contact Me!</a>
+         </figcaption>
+         </footer>
+         <!--JS for copyright year-->
+         <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+         </script> 
+      </div>
+   </body>
+</html>
