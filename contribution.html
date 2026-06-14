@@ -134,9 +134,11 @@
          <!---Title--->       
          <h1>Apply to Be a EazyOS Contributor</h1>
          <hr>
+         <p style="color: red;">* Indicates Required Question</p>
+         <hr>
          <h3>Contributor Requirements</h3>
          <!---Main Content--->
-         <p style="color: red;">* Indicates Required Question</p>
+         
          <ul>
             <li>Needs 1 year or more of coding experience</li>
             <li>Needs a laptop or desktop from the past 10 years.</li>
@@ -146,22 +148,23 @@
          <form action="https://api.web3forms.com/submit" method="POST">
          <input type="hidden" name="access_key" value="a9a90790-cf23-4d00-80d9-e6fa1db97130">
             <label>
+               
             <label>
-               Your Name:
+               Your Name: <p style="color: red;">*</p>
                <input type="Name" name="Name" placeholder="Your Name" required>
                <hr>
             </label>
-            Your Email Addresses:
+            Your Email Addresses: <p style="color: red;">*</p>
             <input type="Email" name="Email" placeholder="Your Email Addresses" required>
             <hr>
             </label>
-            <lable>Your Github Account Name:</lable>
+            <lable>Your Github Account Name: <p style="color: red;">*</p></lable>
             </label>
             <input type="Github Account" name="Github Account" placeholder="Your Github Account Name" required>
             <hr>
             </label>
             <label>
-            <textarea name="Essay" minlength="1,500" required></textarea>
+            
 
                <h3>Essay Requirements</h3>
                <ul>
@@ -170,7 +173,7 @@
                   <li>Must include your reason(s) for becoming a EazyOS contributor, list of available time(s), and any accommodations.</li>
                </ul>
                Your Essay:
-               <textarea rows="30" cols="60" textarea name="Essay"></textarea>
+               <textarea rows="30" cols="60" textarea name="Essay" minlength="1,500" placeholder="Your Application" required></textarea>
                <hr>
             </label>
             <!-- your other form fields go here -->

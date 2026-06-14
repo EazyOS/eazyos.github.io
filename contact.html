@@ -137,23 +137,23 @@
          <h1>Contact Me!</h1>
          <hr>
          <!---Main Content--->
-         
+         <p style="color: red;">* Indicates Required Question</p>
          <form action="https://api.web3forms.com/submit" method="POST">
          
          <input type="hidden" name="access_key" value="1d9a2d36-01a9-4f7e-baa5-05f468926b91">
             <label>
             <label>
-               Your name:
-               <input type="Name" name="Name">
+               Your name: <p style="color: red;">*</p>
+               <input type="Name" name="Name" placeholder="Your Name" required>
                <hr>
             </label>
-            Your email:
-            <input type="Email" name="Email">
+            Your email: <p style="color: red;">*</p>
+            <input type="Email" name="Email" placeholder="Your Email Addresses" required>
             <hr>
             </label>
             <label>
-               Your message:
-               <textarea name="Message"></textarea>
+               Your message: <p style="color: red;">*</p>
+               <textarea name="Message" placeholder="Your Message"></textarea>
                <hr>
             </label>
             <!-- your other form fields go here -->
