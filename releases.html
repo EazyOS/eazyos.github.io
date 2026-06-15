@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <!-- Metadata -->    
+      <<!-- Metadata -->    
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta property="og:site_name" content="EazyOS">
-      <title>The Official EazyOS Website</title>
-      <meta name="description" content="The offical EazyOS website is where you can download EazyOS, Learn About EazyOS, and so much more!">
+      <title>Other EazyOS Versions</title>
+      <meta name="description" content="See All Versions of EazyOS Including Older versions, Pre-Releases and Much More!">
       <!-- Light / Dark mode support -->
       <meta name="color-scheme" content="light dark">
       <!-- Favicon -->
       <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon.png">
       <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon.png">
-      <!--Bing Search Tag-->
-      <meta name="msvalidate.01" content="89768FD69B48FC58B271DE9E2E2A8C31" />
-      
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-89JPD52GRC"></script>
+   </head>
       <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-         
-         gtag('config', 'G-89JPD52GRC');
+         window.onload = function() {
+             document.getElementById("url-display").innerHTML = document.URL;
+         };
+            
       </script>
       <!-- CSS -->
       <style>
          /* CSS Variables */
-
          .info-box {
          background-color: #0084ff49; /* Light Blue background */
          border: 3px solid #0084ff; /* Blue border */
@@ -41,6 +35,7 @@
          color: #0084ff; /* Blue text color */
          }
 
+         
          ..corner-link-container {
          position: fixed; /* or absolute, depending on your needs */
          top: 0;
@@ -49,26 +44,9 @@
          z-index: 1000; /* Optional: ensures the link is above other content */
          }
          .corner-link-container img {
-         width: 90px; /* Adjust the image size as needed */
+         width: 	90px; /* Adjust the image size as needed */
          height: auto;
          border: none; /* Optional: removes default link border in some browsers */
-         }
-         .button {
-         background-color: #4CAF50; /* Green background */
-         border: none; /* Remove default border */
-         color: white; /* White text */
-         padding: 15px 32px; /* Add padding */
-         text-align: center; /* Center the text */
-         text-decoration: none; /* Remove underline */
-         display: inline-block; /* Make it inline-block for sizing */
-         font-size: 16px; /* Increase font size */
-         margin: 4px 2px; /* Add some margin */
-         cursor: pointer; /* Change cursor to pointer on hover */
-         border-radius: 8px; /* Rounded corners */
-         }
-         /* Optional: Add hover effect */
-         .button:hover {
-         background-color: #45a049;
          }
          :root {
         --bg-color: #ffffff;
@@ -79,8 +57,6 @@
         --link-color: #3ea6ff;
         --link-hover: #74c0ff;
     }
-
-
          /* Dark Mode Overrides */
          @media (prefers-color-scheme: dark) {
          :root {
@@ -122,7 +98,7 @@
          :root {
          color-scheme: light dark; /* Informs the browser the page supports both schemes */
          }
-       a {
+        a {
         color: var(--link-color);
         text-decoration: none;
         transition: color 0.2s ease;
@@ -137,64 +113,64 @@
          }
       </style>
    </head>
-   <!-- Homepage Buttion -->
+   <!---Homepage Buttions-->
    <div style="padding: 10px;" class="corner-link-container">
       <a href="/"  aria-label="Homepage">
       <img src="/assets/images/corner.png" alt="Homepage">
       </a>
    </div>
-   <!-- EazyOS Image -->	
    <body>
+ 
+         
+   <body>
+      </head>
+    
       <div class="container">
-       <!--Make sure Messsage is unhidden before editing and is hidden after!-->
-
-       <!--
-       <div class="info-box">
+         
+      <!--Make sure Messsage is unhidden before editing and is hidden after!-->
+      
+      <!--
+      <div class="info-box">
             <h2>Updates are Underway!</h2>
             <p>We are currently working on some updates for this page to help improve our website. Sorry of any inconvenience.</p>
-       </div>
-       -->
+      </div>
+      -->
 
-         <figure>
-            <img src="assets/images/startpage/eazyos-3.1.2.png"
-               alt="EazyOS 3.1.2 (Service Pack 2) Image.">
-            <figcaption>
-               EazyOS 3.1.2 (Service Pack 2) Image.<br>
-            </figcaption>
-         </figure>
-         <!-- Main Content -->
+         <!-- Title -->
+         <h1>Other EazyOS Versions</h1>
+         <h3>See All Versions of EazyOS.</h3>
+
          <hr>
-         <h1>EazyOS</h1>
-         <hr>
-         <a href="https://github.com/AllensTechChannel/EazyOS/releases/latest/download/setup3.1.2.bat" class="button">Download The Latest Version of EazyOS</a>
-         <br>
-         <p><a href="https://github.com/AllensTechChannel/EazyOS/releases">See Other Releases of EazyOS.</a></p>
-         <hr>
-         <h3>What is EazyOS?</h3>
-         <hr>
-         <p>EazyOS is a program coding in the programing language called Python. This program is targeted to people who are less experienced with technology and aims for ease of use (hence the name).</p>
-         <p>It provides a simple user interface (UI) and easy to use programs.  Download above!</p>
-         <hr>
-         <!-- Links -->
-         <h3>Other Links</h3>
-         <ul>
-            <li><a href="/contact">Contact Me!</a></li>
-            <li><a href="/guide">EazyOS For Dummies </a></li>
-            <li><a href="/update">EazyOS Update Catalog</a></li>
-            <li><a href="/contribution">Apply to Be a EazyOS Contributor</a></li>
-            <li><a href="/news">EazyOS Top News</a></li>
-         </ul>
-         <hr>
-         <!-- Copyright -->
+         <h3>EazyOS Safe Mode 3.1.2</h3>
+
+         <p>
+
+         <p>Download Link: <a href="https://github.com/AllensTechChannel/EazyOS/archive/refs/tags/Safe-Mode.zip">Source code (zip)</a></p> 
+         <p>Version Tag: <p style="color: lightpink;"><i>Safe-Mode</i></p>
+         <p>Catagory: Safe Mode</p>
+         
+
+         <h3>EazyOS 3.1.2 (Service Pack 2)</h3>
+
+         <p>
+
+         <p>Download Link: <a href="https://github.com/AllensTechChannel/EazyOS/releases/download/3.1.2/setup3.1.2.bat">setup3.1.2.bat</a></p>   
+         <p>Version Tag: <i>3.1.2</i></p>
+         <p>Catagory: <p style="color: lightblue;">Service Pack</p>
+         <p>Source Code: <a href="https://github.com/AllensTechChannel/EazyOS/archive/refs/tags/3.1.2.zip">Source code (zip)</a></p>
+         
+
+         <!--Copyright-->
          <figcaption>
             Copyright &copy;
             <span id="year"></span>
-            AllensTechChannel. All rights reserved. <a href="/contact" target="_blank" rel="noopener noreferrer">Contact Me!</a>
+            AllensTechChannel. All rights reserved.<a href="/contact" target="_blank" rel="noopener noreferrer">Contact Me!</a>
          </figcaption>
-         <!-- JS Script for Year -->
+         </footer>
+         <!--JS for copyright year-->
          <script>
             document.getElementById("year").textContent = new Date().getFullYear();
-         </script>
+         </script> 
       </div>
    </body>
 </html>
